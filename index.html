@@ -1,827 +1,939 @@
+<!--
+**Pruthviraj-Guddu/Pruthviraj-Guddu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Here are some ideas to get you started:
+- 🔭 I’m currently working on ...myself 
+- 🌱 I’m currently learning ...about myself 
+- 👯 I’m looking to collaborate on ...myself 
+- 🤔 I’m looking for help with ...myself 
+- 💬 Ask me about ...myself 
+- 📫 How to reach me: ...myself 
+- 😄 Pronouns: ...myself 
+- ⚡ Fun fact: ...myself 
+-->
+
+<!-- Created by Pruthviraj -->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-  <title>GudduWeb</title>
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pruthviraj Mundargi</title>
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link
+      rel="icon"
+      type="Images/project imgs/x-icon"
+      href="Images/project imgs/favicon.ico"
+    />
+  </head>
 
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Raleway:400,700&display=swap"
-    rel="stylesheet" />
-
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="" />
-            <span>
-              Guddu
-            </span>
-          </a>
-
-          <div class="navbar-collapse" id="">
-            <div class="custom_menu-btn">
-              <button onclick="openNav()">
-                <span class="s-1"> </span>
-                <span class="s-2"> </span>
-                <span class="s-3"> </span>
-              </button>
+  <body>
+    <i class="fa fa-arrow-up" aria-hidden="true" onclick="scrollToTop();"></i>
+    <section class="sec1" id="section1">
+      <div class="menuBar">
+        <ul>
+          <li><a href="#section1">Home</a></li>
+          <li><a href="#section2">About</a></li>
+          <li><a href="#section3">Projects</a></li>
+          <li><a href="#section4">contact</a></li>
+        </ul>
+      </div>
+      <div class="navBar">
+        <div class="logo">
+          <h1>Pruthviraj Mundargi</h1>
+        </div>
+        <div class="navBar__menu">
+          <ul>
+            <li>
+              <a href="#section1">Home</a>
+            </li>
+            <li>
+              <a href="#section2">About</a>
+            </li>
+            <li>
+              <a href="#section3">Projects</a>
+            </li>
+            <li>
+              <a href="#section4">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sec1__menuIcon"></div>
+      </div>
+      <div class="sec1__container">
+        <div class="sec1__content">
+          <div class="sec1__contentDetail">
+            <div class="sec1__contentHider">
+              <h1>hi,</h1>
             </div>
-            <div id="myNav" class="overlay">
-              <div class="overlay-content">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="food.html">Food</a>
-                <a href="contact.html">Contact Us</a>
-              </div>
+            <div class="sec1__contentHider">
+              <h1>I'am <span>Pruthviraj</span></h1>
+            </div>
+            <div class="sec1__contentHider">
+              <h2>
+                Software Developer<br />
+                😊
+              </h2>
             </div>
           </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
-    <!-- slider section -->
-    <section class=" slider_section position-relative">
-      <div class="side_heading">
-        <h5>
-          G
-          U
-          D
-          D
-          U
-        </h5>
-      </div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-3 col-md-4 offset-md-1">
-            <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
-                  01
-                </li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1">
-                  02
-                </li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2">
-                  03
-                </li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3">
-                  04
-                </li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="img-box b-1">
-                    <img src="images/slider-img.png" alt="" />
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="img-box b-2">
-                    <img src="images/hot-1.png" alt="" />
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="img-box b-3">
-                    <img src="images/hot-2.png" alt="" />
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="img-box b-4">
-                    <img src="images/hot-3.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div class="carousel_btn-box">
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class=" col-md-5 offset-md-1">
-            <div class="detail-box">
-              <h1>
-                Pruthviraj <br>
-                Guddu
-              </h1>
-              <p>
-               Most people just want to be in the result and not in the process, 
-               and its in the process where you realize who deserves to be in the result.
-              </p>
 
-              <div class="btn-box">
-                <a href="" class="btn-1">
-                  Contact Us
-                </a>
-                <a href="" class="btn-2">
-                  Order Now
-                </a>
-              </div>
-
-            </div>
+          <a href="hhttps://github.com/Pruthviraj-Guddu/"
+            >follow Me <i class="fab fa-github"></i
+          ></a>
+        </div>
+        <div class="sec1__imgContainer">
+          <div class="sec1__imgBx">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI4ejwd8sboV9yPRvRbiesSd62QnzNLoX2oQ&usqp=CAU"
+              alt=""
+            />
+            <span class="sec1__design1"></span>
+            <span class="sec1__design2"></span>
+            <span class="sec1__design3"></span>
+            <span class="sec1__design4"></span>
           </div>
         </div>
       </div>
     </section>
-    <!-- end slider section -->
-  </div>
+    <section class="sec2" id="section2">
+      <div class="sec2__heading">
+        <h2>about me</h2>
+      </div>
+      <div class="sec2__container">
+        <div class="sec2__aboutme1" data-aos="fade-up" data-aos-offset="-90">
+          <div class="sec2__aboutme1Img">
+            <img
+              src="https://avatars.githubusercontent.com/u/59650445?v=4"
+              alt="Pruthviraj Guddu"
+            />
+          </div>
 
-  <!-- Start circle triangle -->
+          <h2>Pruthviraj 👽</h2>
+          <br />
+          <h3>The nerd</h3>
 
-  <div class="loader">
-    <svg viewBox="0 0 80 80">
-        <circle id="test" cx="40" cy="40" r="32"></circle>
-    </svg>
-</div>
+          <div class="sec2__aboutme1Social">
+            <ul>
+              <li>
+                <a href="https://github.com/Pruthviraj-Guddu/" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
 
-<div class="loader triangle">
-    <svg viewBox="0 0 86 80">
-        <polygon points="43 8 79 72 7 72"></polygon>
-    </svg>
-</div>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/pruthvirajma"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
 
-<div class="loader">
-    <svg viewBox="0 0 80 80">
-        <rect x="8" y="8" width="64" height="64"></rect>
-    </svg>
-</div>
+              <li>
+                <a href="mailto:pruthvigudduraj@gmail.com"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sec2__aboutme2" data-aos="fade-up" data-aos-delay="1000">
+          <p>
+            Hey guys, this is my homepage, so I have to say something about
+            myself.<br />
+            <br />
+            My name is Pruthviraj Mundargi aka {<b>Guddu</b> } M.S. Computer
+            Science Candidate with Proven Experience in Android and
+            Cross-Platform App Development, Expertise in Xamarin, C#, and SQL
+            for Dynamic Solutions.
 
-<!-- end  circle triangle -->
+            <br />
 
-  <!-- about section -->
-  <section class="about_section">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-5 offset-md-1">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                About <br>
-                Our <br>
-                Food
+            Currently on the exciting journey towards an M.S. in Computer
+            Science at Drexel University, Philadelphia. With a knack for
+            crafting dynamic solutions, my focus lies in Android and
+            Cross-Platform App Development.
+
+            <br />
+
+            My career has been a thrilling ride, kickstarting with a dynamic
+            role as Software Engineer Intern at
+            <u>'Practo Technologies pvt ltd'</u>, where I contributed to the
+            evolution of healthcare through tech.
+            <br />
+            Transitioning to <u>'Zinemind Technologies'</u>, I took the leap
+            into cross-platform app development, working on projects that ranged
+            from real estate solutions to aerospace innovation. ✈️ specializing
+            in Cross-Platform apps using Xamarin, C#, and SQL. I had the
+            opportunity to work on diverse projects like developing APIs for
+            sports ERP solutions
+            <br />
+
+            Alongside hands-on experience, I've fortified my expertise with
+            certifications like Advanced Certified Hardware and Networking
+            Professional (ACHNP), and Certified Programs in .Net Technologies.
+            I've also dabbled in cloud technologies with Google Cloud Essentials
+            and AWS Fundamentals certifications.
+            <br />
+            My toolkit includes an array of programming languages like C, C++,
+            Java, and tools like GitHub, Android Studio, and Postman.
+            <br />
+            And when I'm not crafting digital solutions, With a foundation in
+            multiple programming languages and tools, I'm not just another
+            software engineer. I'm a storyteller, translating complex code into
+            solutions that speak to users worldwide.
+            <br />
+            Let's connect and embark on new ventures together!
+          </p>
+        </div>
+      </div>
+
+      <div class="sec2__container">
+        <div class="sec2__aboutme1">
+          <h2>Skills</h2>
+          <br />
+          <ul style="font-size: 1.5rem">
+            <li>Software Engineer</li>
+            <li>Computer Networking</li>
+            <li>Computer</li>
+          </ul>
+        </div>
+
+        <div class="sec2__aboutme2">
+          <ul>
+            <h2 style="font-size: 1.9rem">Education</h2>
+            <br />
+            <li style="font-size: 1.5rem">
+              <p>Masters in Computer Science, <i>2024</i></p>
+              <p><b>Institution :</b><i> Drexel University </i></p>
+              <p>
+                <b>Description:</b> Don't know what to say, but it's cool to own
+                a Ms Degree ☺<br />
+                <i>Computer Nerd to the Core.</i>
+              </p>
+            </li>
+            <li style="font-size: 1.5rem">
+              <p>Bachelor's degree in Computer Science, <i>2020</i></p>
+              <p>
+                <b>Institution :</b><i> REVA University </i> Bangalore, India.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--###########		SKILLS SECTION		###########-->
+
+    <section id="skills" class="home-section wg-featurette">
+      <div class="containerzz">
+        <div class="rowzz featurette">
+          <div class="col-md-12 section-heading">
+            <h1>Skills</h1>
+          </div>
+
+          <div class="col-12 col-sm-4">
+            <div class="featurette-icon"><i class="fab fa-###"></i></div>
+            <h3>Languages</h3>
+            <hr color="#e66060" />
+            <br />
+            <img
+              src="Images/website icon/new/c++.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/c.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/csharp.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/python.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/django.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/html.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/css.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/js.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/react.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/node.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/angular.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/bootstrap.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/tailwind.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/sass.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/java.pmg.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/kotlin.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/php.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/md.png"
+              width="50px"
+              height="50px"
+            />
+
+            <!--
+                        <p>C++, C<br>HTML5, CSS3<br>JavaScript, JQuery<br>Python<br>PHP, Perl<br>Assembly (ASM)<br>Pascal<br>Fortran<br>Java, cSharp, kotlin</p> -->
+          </div>
+
+          <div class="col-12 col-sm-4">
+            <div class="featurette-icon"><i class="fab fa-###"></i></div>
+            <h3>Hacking (EH)</h3>
+            <hr color="#e66060" />
+            <br />
+
+            <img
+              src="Images/website icon/new/redhat.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/greyhat.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/appsecurity.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/websecurity.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/androidhack.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/cehv8.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/cehv11.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/cehv12.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/encrypt.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/bashscript.png"
+              width="50px"
+              height="50px"
+            />
+
+            <p>
+              Cryptography<br />Steganography<br />EH v8<br />EH v10, EH v11<br />Termux<br />Red
+              Hat<br />Rasberry PI<br />Kali Linux<br />Bash, Power Shell
+            </p>
+          </div>
+
+          <div class="col-12 col-sm-4">
+            <div class="featurette-icon"><i class="fab fa-###"></i></div>
+            <h3>Other skills</h3>
+            <hr color="#e66060" />
+            <br />
+
+            <img
+              src="Images/website icon/new/github.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/vscode.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/androidstudio.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/git.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/windows.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/kali.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/rasberry.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/tails.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/qubesos.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/arduino.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/iot.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/designer.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/mysql.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/firebase.png"
+              width="50px"
+              height="50px"
+            />
+            
+                        <p>Arduino<br>Mechatronics<br>Cuircuit board</p>
+          </div>
+
+          <!--<div class="col-12 col-sm-4">
+                        <div class="featurette-icon"><i class="fab fa-###"></i></div>
+                        <h3>Frameworks</h3>
+                        <hr color="#e66060" />
+                        <br />
+
+                        <img src="Images/website icon/bootstrap.jpg" /> <img src="Images/website icon/flask.png" /> <img src="Images/website icon/django.png" /> <img src="Images/website icon/tkinter.jpeg" />
+                        <img src="Images/website icon/react_js.png" /> <img src="Images/website icon/node_js.jpg" /> <img src="Images/website icon/angularjs.png" /> <img src="Images/website icon/ajax_js.png" />-->
+
+          <!--
+                        <p>Bootstrap<br>Flask<br> Django<br>Tkinter<br> React JS<br>Node JS<br>Angular JS<br>Ajax JS</p>-->
+          <!--</div>
+
+                    <div class="col-12 col-sm-4">
+                        <div class="featurette-icon"><i class="fas fa-###"></i></div>
+                        <h3>OS</h3>
+                        <hr color="#e66060" />
+                        <br />
+
+                        <img src="Images/website icon/windows_os.png" /> <img src="Images/website icon/android_os.png" /> <img src="Images/website icon/debian.png" /> <img src="Images/website icon/linux.png" />
+                        <img src="Images/website icon/tails.png" /> <img src="Images/website icon/qubes.png" />-->
+
+          <!--
+                        <p>Windows OS<br>Remix OS<br>Linux OS<br>Tails OS<br>Qubes OS</p>-->
+          <!--</div>
+
+                    <div class="col-12 col-sm-4">
+                        <div class="featurette-icon"><i class="fab fa-###"></i></div>
+                        <h3>Others</h3>
+                        <hr color="#e66060" />
+                        <br />
+
+                        <img src="Images/website icon/andriod_studio.png" /> <img src="Images/website icon/visual_studio.png" /> <img src="Images/website icon/git.png" /> <img src="Images/website icon/github.png" />
+                        <img src="Images/website icon/phpmyadmin.png" /> <img src="Images/website icon/mysql.png" /> <img src="Images/website icon/apache.png" /> <img src="Images/website icon/marketing-digital.png" />
+                        <img src="Images/website icon/wordpress.png" /> <img src="Images/website icon/wix.png" /> <img src="Images/website icon/blogger.png" />-->
+
+          <!--
+                        <p>Andriod Studio<br>Visual Studio<br>Git, GitHub <br>phpMyAdmin<br> MySQL Database<br>Apache Web Server<br>Online Marketing<br>Wordpress<br>WIX<br>Blogger</p>-->
+          <!--</div>-->
+        </div>
+      </div>
+    </section>
+
+    <!--###########		SKILLS SECTION	ENDS	###########-->
+
+    <section id="skills" class="home-section wg-featurette">
+      <div class="containerzz">
+        <div class="rowzz featurette">
+          <div class="col-md-12 section-heading">
+            <h1>Currently Learning</h1>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="featurette-icon"><i class="fab fa-###"></i></div>
+            <h3>Languages</h3>
+            <hr color="#e66060" />
+            <br />
+
+            <img
+              src="Images/website icon/new/swift.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/ruby.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/rust.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/dart.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/golang.png"
+              width="50px"
+              height="50px"
+            />
+
+            <!--
+			<p>Swift Programming<br>Ruby Programming</p> -->
+          </div>
+
+          <div class="col-12 col-sm-4">
+            <div class="featurette-icon"><i class="fab fa-###"></i></div>
+            <h3>Hacking (EH)</h3>
+            <hr color="#e66060" />
+            <br />
+
+            <img
+              src="Images/website icon/new/cloudsecurity.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/satallitehack.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/signalhacking.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/iosthingsmac.pn.png"
+              width="50px"
+              height="50px"
+            />
+
+            <!--			
+                        <p>GHH (master)<br>DDW Hacking<br>App Patching<br>Sattalite Hacking<br>Car MB Hacking</p> -->
+          </div>
+
+          <div class="col-12 col-sm-4">
+            <div class="featurette-icon"><i class="fab fa-###"></i></div>
+            <h3>Others</h3>
+            <hr color="#e66060" />
+            <br />
+
+            <img
+              src="Images/website icon/new/ios.png"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="Images/website icon/new/maclogo.png"
+              width="50px"
+              height="50px"
+            />
+
+            <!--
+                        <p>IOS App Dev.<br>UI/UX Design</p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--#########		PROJECTS SECTION	###########-->
+
+    <section class="sec3" id="section3">
+      <h1>Projects</h1>
+      <div class="sec3__container">
+        <a
+          style="text-decoration: none"
+          href="https://nemonet-profile.netlify.app/"
+          target="_blank"
+        >
+          <div
+            class="sec3__card"
+            data-aos="fade-up"
+            data-aos-delay="800"
+            style="
+              background: rgba(242, 239, 239, 0.15);
+              box-shadow: 0 8px 32px 0 rgba(141, 148, 243, 0.37);
+              backdrop-filter: blur(6px);
+              -webkit-backdrop-filter: blur(6px);
+              border-radius: 10px;
+            "
+          >
+            <div class="sec3__box">
+              <div class="sec3__percent">
+                <div class="number">
+                  <img
+                    src="Images/project imgs/img1.png"
+                    width="200"
+                    height="200"
+                  />
+                  <!-- <h2>Image<span>1</span></h2> -->
+                </div>
+              </div>
+              <h2 style="text-align: center; color: #ff6666" class="sec3__text">
+                Nemonet Profile <br />
+                <br />
               </h2>
-              <hr>
+
+              <button>LIVE</button>
             </div>
-            <p>
-              Trust yourself.
-              You've survived a lot, and you'll survive whatever is coming. 
-            </p>
-            <a href="">
-              Read More
-            </a>
           </div>
-        </div>
-        <div class="col-md-6 px-0">
-          <div class="img-box">
-            <img src="images/about-img.jpg" alt="">
+        </a>
+
+        <a
+          style="text-decoration: none"
+          href="https://www.torproject.org/download/"
+          target="_blank"
+        >
+          <div
+            class="sec3__card"
+            data-aos="fade-up"
+            data-aos-delay="800"
+            style="
+              background: rgba(242, 239, 239, 0.15);
+              box-shadow: 0 8px 32px 0 rgba(141, 148, 243, 0.37);
+              backdrop-filter: blur(6px);
+              -webkit-backdrop-filter: blur(6px);
+              border-radius: 10px;
+            "
+          >
+            <div class="sec3__box">
+              <div class="sec3__percent">
+                <div class="number">
+                  <img
+                    src="Images/project imgs/img3.jpeg"
+                    width="200"
+                    height="200"
+                    style="border-radius: 50%"
+                  />
+                  <!--<h2>Image<span>3</span></h2> -->
+                </div>
+              </div>
+              <h2 style="text-align: center; color: #ff6666" class="sec3__text">
+                Nemonet Profile <br />
+                <br />
+              </h2>
+
+              <button>Live</button>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- end about section -->
-
-  <!-- dish section -->
-
-  <section class="dish_section layout_padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="dish_container">
-            <div class="box">
-              <img src="images/dish.jpg" alt="">
-            </div>
-            <div class="box">
-              <img src="images/dish.jpg" alt="">
-            </div>
-            <div class="box">
-              <img src="images/dish.jpg" alt="">
-            </div>
-            <div class="box">
-              <img src="images/dish.jpg" alt="">
-            </div>
+    <section class="sec4" id="section4">
+      <div class="sec4__container">
+        <div class="sec4__box1">
+          <div class="sec4__content1" data-aos="fade-right">
+            <h2>Nemo<span>Net</span>👽</h2>
+            <p>
+              Sometimes it is hard to introduce yourself because you know
+              yourself so well that you do not know where to start with. <br />
+              Let me give a try to see what kind of image you have about me
+              through my self-description. I hope that my impression about
+              myself and your impression about me are not so different.<br />
+              <br />
+              If you are interested in knowing more, contact me. Do not expect
+              too much, and keep your sense of humor.
+            </p>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <hr>
+          <div
+            class="sec4__content2"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <div class="sec4__content2Icon">
+              <i class="fas fa-phone-alt"></i>
               <h2>
-                Our <br>
-                Food <br>
-                dishs
+                <a style="color: white" , href="+71039998663">+1 7039998663</a>
               </h2>
             </div>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in
-              some form, by injected humour, or randomised words
-            </p>
-            <a href="">
-              Read More
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end dish section -->
-
-  <!-- hot section -->
-
-  <section class="hot_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          What's Hot
-        </h2>
-        <hr>
-      </div>
-      <p>
-        There are many variations of passages of Lorem Ipsum available, but the majority
-      </p>
-    </div>
-    <div class="carousel_container">
-      <div class="container">
-        <div class="carousel-wrap ">
-          <div class="owl-carousel">
-            <div class="item">
-              <div class="box">
-                <div class="img-box">
-                  <img src="images/hot-1.png" />
-                </div>
-                <div class="detail-box">
-                  <h4>
-                    $30
-                  </h4>
-                  <p>
-                    There are many variations of passages of Lorem Ipsum available,
-                  </p>
-                  <a href="">
-                    Order Now
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="box">
-                <div class="img-box">
-                  <img src="images/hot-2.png" />
-                </div>
-                <div class="detail-box">
-                  <h4>
-                    $30
-                  </h4>
-                  <p>
-                    There are many variations of passages of Lorem Ipsum available,
-                  </p>
-                  <a href="">
-                    Order Now
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="box">
-                <div class="img-box">
-                  <img src="images/hot-3.png" />
-                </div>
-                <div class="detail-box">
-                  <h4>
-                    $30
-                  </h4>
-                  <p>
-                    There are many variations of passages of Lorem Ipsum available,
-                  </p>
-                  <a href="">
-                    Order Now
-                  </a>
-                </div>
-              </div>
+            <div class="sec4__content2Icon">
+              <i class="fab fa-whatsapp"></i>
+              <h2>
+                <a style="color: white" , href="+91 9916687670"
+                  >+91 9916687670</a
+                >
+              </h2>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end hot section -->
-
-
-  <!-- app section -->
-<!--
-  <section class="app_section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="img-box">
-            <img src="images/man-with-phone.png" alt="">
+          <div
+            class="sec4__content3"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
+            <ul>
+              <li>
+                <a href="https://github.com/Pruthviraj-Guddu/" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li></li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/pruthvirajma"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li></li>
+              <li>
+                <a href="mailto:pruthvigudduraj@gmail.com"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </li>
+              <li></li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-6 offset-md-2">
-          <div class="detail-box">
-            <h2>
-              <span> 50% </span> off On every food
-              download now our app
-            </h2>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in
-              some form, by
-            </p>
-            <div class="btn-box">
-              <a href="">
-                <img src="images/app-store.png" alt="">
+        <div class="sec4__box2" data-aos="fade-in" data-aos-delay="500">
+          <h2>Quick links</h2>
+          <div class="sec4__links">
+            <ul>
+              <li><a href="#section1">Home</a></li>
+              <li><a href="#section2">About</a></li>
+              <li><a href="#section3">Projects</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sec4__box3">
+          <h2>Contact Us</h2>
+          <form>
+            <input
+              data-aos="fade-left"
+              data-aos-delay="500"
+              class="sec4__name"
+              type="text"
+              placeholder="Enter your Name"
+              required
+            />
+            <input
+              data-aos="fade-left"
+              data-aos-delay="800"
+              class="sec4__email"
+              type="email"
+              placeholder="Enter your Email"
+              required
+            />
+            <input
+              class="sec4__message"
+              data-aos="fade-left"
+              data-aos-delay="1000"
+              type="text"
+              placeholder="enter the feedback or suggestion"
+              required
+            />
+            <button type="submit">send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-body">
+        <div>The Programmer</div>
+        <br />
+        <div>
+          <p>
+            The Life of a Programmer, error 404 sleep not found.<br />
+            We have no life, we are just a machine that turns coffee into code.
+          </p>
+          <ul>
+            <li>
+              <a href="https://github.com/Pruthviraj-Guddu/" target="_blank">
+                Github
               </a>
-              <a href="">
-                <img src="images/play-store.png" alt="">
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/pruthvirajma" target="_blank"
+                >LinkedIn
               </a>
-            </div>
-          </div>
+            </li>
+            <li>
+              <a href="mailto:pruthvigudduraj@gmail.com">Email</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
--->
-  <!-- end app section -->
+      <div class="footer-copyright">© Pruthviraj Mundargi Anupkumar 2024.</div>
+    </footer>
 
+    <!-- Your JavaScript code here -->
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuItems = document.querySelectorAll(".menuBar ul li a");
 
+        menuItems.forEach(function (menuItem) {
+          menuItem.addEventListener("click", function () {
+            const menuBar = document.querySelector(".menuBar");
+            menuBar.classList.remove("active");
+          });
+        });
+      });
+    </script>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-
-
-  <!-- client section -->
-
-  <section class="client_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <hr>
-        <h2>
-          Best quots came across
-        </h2>
-      </div>
-      <div id="carouselExample2Indicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExample2Indicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExample2Indicators" data-slide-to="1"></li>
-          <li data-target="#carouselExample2Indicators" data-slide-to="2"></li>
-          <li data-target="#carouselExample2Indicators" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="box ">
-              <div class="client_id">
-                <div class="img-box">
-                  <img src="images/client.png" alt="" class="img-fluid">
-                </div>
-                <h4>
-                  Pruthviraj Guddu
-                </h4>
-              </div>
-              <div class="detail-box">
-                <p>
-                 The hardest walk you can make is alone.
-                 But its the walk that will make you stronger.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="box ">
-              <div class="client_id">
-                <div class="img-box">
-                  <img src="images/client.png" alt="" class="img-fluid">
-                </div>
-                <h4>
-                  Pruthviraj Guddu
-                </h4>
-              </div>
-              <div class="detail-box">
-                <p>
-                  If you start now you'll be seeing the results one day earlier than if you start tomorrow.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="box ">
-              <div class="client_id">
-                <div class="img-box">
-                  <img src="images/client.png" alt="" class="img-fluid">
-                </div>
-                <h4>
-                  Pruthviraj Guddu
-                </h4>
-              </div>
-              <div class="detail-box">
-                <p>
-                  “Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="box ">
-              <div class="client_id">
-                <div class="img-box">
-                  <img src="images/client.png" alt="" class="img-fluid">
-                </div>
-                <h4>
-                  Pruthviraj Guddu
-                </h4>
-              </div>
-              <div class="detail-box">
-                <p>
-                  Be thankful for all the struggles you go through. They make you stronger, wiser and humble. Don’t let it break you let it make you.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- end client section -->
-
-  <!-- contact section -->
-
-  <section class="contact_section layout_padding-bottom ">
-    <div class="container">
-      <h2>
-        Get In touch
-      </h2>
-      <div class="row">
-        <div class="col-md-7">
-          <div class="form_container">
-            <form action="">
-              <input type="text" placeholder="Name">
-              <input type="text" placeholder="Phone number">
-              <input type="email" placeholder="Email">
-              <input type="text" placeholder="Message" class="message_input">
-              <button>
-                Send
-              </button>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="contact_box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/location.png" alt="">
-              </div>
-              <h6>
-                Chestnut St, Philadelphia, PA 19104
-              </h6>
-            </a>
-            <a href="">
-              <div class="img-box">
-                <img src="images/call.png" alt="">
-              </div>
-              <h6>
-                (+01) 123456789012
-              </h6>
-            </a>
-            <a href="">
-              <div class="img-box">
-                <img src="images/envelope.png" alt="">
-              </div>
-              <h6>
-                secret@gmail.com
-              </h6>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end contact section -->
-
-  <!-- subscribe section -->
-
-  <section class="subscribe_section">
-    <div class="container">
-      <form action="">
-        <div class="row">
-          <div class="col-lg-3 col-md-4">
-            <label for="subEmail">
-              Our Newsletter
-            </label>
-          </div>
-          <div class="col-lg-9 col-md-8">
-            <div class="box">
-              <input type="email" placeholder="Enter your email" id="subEmail">
-              <button>
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- end subscribe section -->
-
-
-
-   <!-- /*# start https://uiverse.io/Nawsome/tender-swan-29 */-->
-
- 
- <div class="socket">
-  <div class="gel center-gel">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c1 r1">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c2 r1">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c3 r1">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c4 r1">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c5 r1">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c6 r1">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  
-  <div class="gel c7 r2">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  
-  <div class="gel c8 r2">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c9 r2">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c10 r2">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c11 r2">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c12 r2">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c13 r2">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c14 r2">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c15 r2">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c16 r2">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c17 r2">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c18 r2">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c19 r3">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c20 r3">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c21 r3">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c22 r3">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c23 r3">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c24 r3">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c25 r3">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c26 r3">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c28 r3">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c29 r3">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c30 r3">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c31 r3">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c32 r3">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c33 r3">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c34 r3">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c35 r3">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c36 r3">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  <div class="gel c37 r3">
-    <div class="hex-brick h1"></div>
-    <div class="hex-brick h2"></div>
-    <div class="hex-brick h3"></div>
-  </div>
-  
-</div>
-
-
- <!-- /*# end https://uiverse.io/Nawsome/tender-swan-29 */-->
-
-
-
-
-
-  <!-- footer section -->
-  <section class="container-fluid footer_section">
-    <div class="social_container">
-      <h4>
-        Follow on
-      </h4>
-      <div class="social-box">
-        <a href="https://www.facebook.com/Pruthviraj.Guddu/">
-          <img src="images/fb.png" alt="">
-        </a>
-        <a href="https://github.com/Pruthviraj-Guddu">
-          <img src="images/github-mark-white.png" alt="">
-        </a>
-        <a href="https://in.linkedin.com/in/pruthvirajma">
-          <img src="images/linkedin.png" alt="">
-        </a>
-        <a href="https://www.youtube.com/@PruthvirajMA">
-          <img src="images/youtube.png" alt="">
-        </a>
-      </div>
-    </div>
-    <p>
-      &copy; 2023 All Rights Reserved. Design by
-      <a href="https://pruthviraj-guddu.github.io/">Pruthviraj Guddu</a>
-    </p>
-  </section>
-  <!-- footer section -->
-
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-
-  <script>
-    function openNav() {
-      document.getElementById("myNav").classList.toggle("menu_width");
-      document
-        .querySelector(".custom_menu-btn")
-        .classList.toggle("menu_btn-style");
-    }
-  </script>
-
-  <!-- owl carousel script -->
-  <script type="text/javascript">
-    $(".owl-carousel").owlCarousel({
-      loop: true,
-      margin: 35,
-      navText: [],
-      autoplay: true,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 2
-        },
-        1000: {
-          items: 3
-        }
+      tl.from(".navBar", { y: "-10rem", duration: 1 });
+      tl.from(".navBar .navBar__menu ul li", {
+        y: "-2rem",
+        opacity: 0,
+        duration: 1,
+        stagger: 0.25,
+      });
+      tl.to(
+        ".sec1__content .sec1__contentDetail h1",
+        { y: "0rem", duration: 1, stagger: 0.25 },
+        "=-1"
+      );
+      tl.from(".sec1__imgBx img", { opacity: 0, x: "50%", duration: 1.5 });
+      tl.from(
+        ".sec1__imgBx .sec1__design1",
+        { opacity: 0, x: "3rem", duration: 1.5 },
+        "=-1"
+      );
+      tl.from(
+        ".sec1__imgBx .sec1__design2",
+        { opacity: 0, x: "-3rem", duration: 1.5 },
+        "=-1"
+      );
+      tl.from(
+        ".sec1__design3",
+        { opacity: 0, x: "-30%", duration: 1.5 },
+        "=-2"
+      );
+      tl.from(".sec1__design4", { opacity: 0, duration: 1.5 }, "=-2");
+      tl.from(".sec1__content a", { opacity: 0, duration: 1.5 }, "=-3");
+    </script>
+    <!-- our AOs will occur here -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        offset: 0,
+      });
+    </script>
+    <script>
+      var sec1__menuIcon = document.querySelector(".sec1__menuIcon");
+      var menuBar = document.querySelector(".menuBar");
+      sec1__menuIcon.addEventListener("click", function () {
+        sec1__menuIcon.classList.toggle("active");
+        menuBar.classList.toggle("active");
+      });
+    </script>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var scroll = document.querySelector(".fa");
+        scroll.classList.toggle("active", window.scrollY > 500);
+      });
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
       }
-    });
-  </script>
-  <!-- end owl carousel script -->
-
-</body>
-
+    </script>
+  </body>
 </html>
