@@ -631,7 +631,7 @@ button:hover {
   min-height: 100vh;
   overflow: hidden;
   width: 100%;
-  background: radial-gradient(#656363, #3a3333);
+  background: radial-gradient(#c1d0f1, #c5caf2);
   display: flex;
   flex-direction: column;
   align-items: center;
