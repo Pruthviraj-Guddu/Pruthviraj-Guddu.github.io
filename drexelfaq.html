@@ -67,6 +67,7 @@
         text-decoration: underline; /* Underline links on hover */
       }
     </style>
+    <!-- <script src="/javascript/file.js"></script> -->
   </head>
   <body>
     <header>
@@ -79,9 +80,27 @@
         />
         <div>
           <h1>Welcome to Drexel University</h1>
-          <p style="font-size: 1.2rem">
-            last updated 28 JUNE 2024, 4:30 pm EDT
-          </p>
+
+          <p style="font-size: 1rem" id="last-updated">Last updated: </p>
+          <script>
+            fetch('https://api.github.com/repos/Pruthviraj-Guddu/Pruthviraj-Guddu.github.io/commits/c1f5cf566a72462e15d695818eea14bab4e2d79f')
+              .then(response => response.json())
+              .then(data => {
+                const commitDate = new Date(data.commit.author.date);
+                const formattedDate = commitDate.toLocaleString('en-US', {
+                  timeZone: 'America/New_York',
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                  hour: 'numeric',
+                  minute: 'numeric',
+                  hour12: true
+                });
+        
+                document.getElementById('last-updated').innerText = `Last updated ${formattedDate} EDT`;
+              })
+              .catch(error => console.error('Error fetching commit data:', error));
+          </script>
           <h2>
             I will try my best to help you guys (here to help, not for profit)
           </h2>
