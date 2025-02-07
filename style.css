@@ -1,5 +1,3 @@
-/* Created by NemoNet {The Young Programmer 🏅} */
-
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +37,7 @@ html {
   bottom: 40px;
 }
 .sec1 {
+  margin-top: 70px;
   position: relative;
   min-height: 100vh;
   width: 100%;
@@ -93,8 +92,8 @@ html {
 
 .navBar {
   display: flex;
-  position: fixed;
-  top: 0;
+  position: fixed; /* Make it fixed at the top */
+  top: 0; /* Fix it to the top */
   left: 0;
   width: 100%;
   background: #fff;
@@ -106,7 +105,7 @@ html {
 }
 
 .sec1__menuIcon {
-  display: none;
+  display: block; /* Make the menu icon visible on smaller screens */
   position: relative;
   height: 3rem;
   width: 3rem;
@@ -320,7 +319,7 @@ html {
     transform: translateY(0rem) rotateZ(0deg);
   }
 }
-
+/*
 .sec2 {
   position: relative;
   min-height: 100vh;
@@ -332,6 +331,7 @@ html {
   justify-content: space-evenly;
   border-bottom: 0.2rem solid rgb(218, 218, 218);
 }
+  */
 
 .sec2__heading {
   overflow: hidden;
@@ -374,10 +374,11 @@ html {
 
 .sec2__aboutme1Img {
   position: relative;
-  width: 10rem;
+  width: 13rem;
+  height: 13rem;
   overflow: hidden;
-  border: 0.3rem solid rgb(156, 60, 60);
-  padding: 0.3rem;
+  border: 0.1rem solid rgb(224, 119, 119);
+  padding: 0.1rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -386,15 +387,17 @@ html {
 }
 
 .sec2__aboutme1Img:hover {
-  transform: scale(2.2);
+  transform: scale(2.4);
 }
+
 
 .sec2__aboutme1Img img {
   width: 100%;
   object-fit: cover;
-  background: linear-gradient(rgb(255, 121, 121), rgb(146, 33, 33));
+  background: linear-gradient(rgb(236, 171, 171), rgb(165, 99, 99));
   border-radius: 50%;
 }
+
 
 .sec2__aboutme1 h2 {
   position: relative;
@@ -631,7 +634,7 @@ button:hover {
   min-height: 100vh;
   overflow: hidden;
   width: 100%;
-  background: radial-gradient(#c1d0f1, #c5caf2);
+  background: radial-gradient(#c1d0f1, #6d7adc);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -759,9 +762,9 @@ button:hover {
 .sec4 {
   overflow: hidden;
   position: relative;
-  min-height: 70vh;
+  min-height: 40vh;
   width: 100%;
-  background: radial-gradient(#333, #000);
+  background: radial-gradient(#342020, #000);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1045,4 +1048,309 @@ footer {
   color: white;
   text-decoration: none;
   margin-bottom: 7px;
+}
+
+/*#######################################*/
+
+/* SocialLink section Section */
+/* Social Links Container */
+.socialLinksContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Space between rows */
+  width: 100%;
+  max-width: 400px; /* Prevents it from stretching too wide */
+  margin: auto;
+}
+
+/* Each Row */
+.socialRow {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between buttons */
+  width: 100%;
+}
+
+/* Social Links */
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: #e66060;
+  color: white;
+  padding: 8px 9px;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  transition: 0.3s;
+  width: 150px; /* Set a uniform width */
+  text-align: center;
+}
+
+.socialLink:hover {
+  background: #d45555;
+}
+
+/* Responsive: Stack Links in One Column on Small Screens */
+@media (max-width: 500px) {
+  .socialRow {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/*############################################################*/
+/* About Me Section */
+.sec2 {
+  text-align: center;
+  padding: 50px 50px;
+}
+
+/* Profile Image */
+/* Profile Image - Perfect Circle */
+.sec2__aboutme1Img img {
+  width: 120px; /* Ensure width and height are equal */
+  height: 120px;
+  border-radius: 50%; /* Makes it a perfect circle */
+  object-fit: cover; /* Ensures the image fills the circle properly */
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #6f23e1; /* Optional: Adds a border */
+}
+
+/* Name & Title */
+#firstNameElement {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #222;
+}
+
+#nicknameElement {
+  font-size: 1.5rem;
+  color: #e66060;
+}
+
+/* Social Icons */
+.sec2__aboutme1Social ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.sec2__aboutme1Social ul li {
+  display: inline-block;
+}
+
+.sec2__aboutme1Social ul li a {
+  font-size: 2rem;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.sec2__aboutme1Social ul li a:hover {
+  color: #e66060;
+}
+
+/* About Text */
+.sec2__aboutme2 p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+  color: #444;
+}
+
+#skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Distributes skills evenly */
+  text-align: center;
+}
+
+.skill-card {
+  flex: 1 1 30%; /* Ensures equal distribution */
+  min-width: 250px;
+  max-width: 350px;
+  margin: 10px;
+  padding: 20px;
+  /*background: rgba(240, 240, 240, 0.9);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.skill-title {
+  font-size: 1.8rem; /* Keeps the font size consistent */
+  font-weight: bold;
+  color: #333;
+}
+
+.skill-text {
+  font-size: 1.7rem;
+  color: #555;
+}
+
+/* Project Grid */
+/* Project Grid */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Project Card */
+.project-card {
+  width: 320px; /* Slightly larger for better text display */
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  padding-bottom: 10px;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Project Image */
+
+/* Image Wrapper */
+.project-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Project Image */
+.project-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Project Info */
+.project-info {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Bigger Project Titles */
+.project-info h3 {
+  font-size: 2rem; /* Increased size for better readability */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Bigger Descriptions */
+.project-info p {
+  font-size: 1.4rem; /* Increased text size */
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Functionality List */
+.project-info ul {
+  text-align: left;
+  padding-left: 20px;
+  font-size: 1.2rem; /* Slightly larger */
+  color: #666;
+}
+
+/* Smaller Icons */
+.featurette-icon i {
+  font-size: 1.5rem; /* Reduced icon size */
+  color: #e66060;
+}
+
+/* Project Button */
+.project-button {
+  background: #e66060;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.4rem; /* Increased button text size */
+  transition: background 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.project-button:hover {
+  background: #d45555;
+}
+
+/* Certifications Grid */
+/* Certifications Grid - Horizontal Layout */
+#certifications-container {
+  display: flex;
+  flex-direction: column; /* Aligns items in a vertical column */
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  max-width: 1000px; /* Prevents it from stretching too much */
+  margin: auto;
+}
+
+/* Certification Card - Full Width */
+.cert-card {
+  width: 100%;
+  max-width: 800px; /* Keeps the content readable */
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  text-align: left; /* Aligns text to the left */
+}
+
+.cert-card:hover {
+  transform: scale(1.02);
+}
+
+/* Certification Title */
+.cert-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Certification Text */
+.cert-card p {
+  font-size: 1.6rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Certification Button */
+.cert-button {
+  background: #e66060;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: background 0.3s ease-in-out;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.cert-button img {
+  margin-left: 10px;
+}
+
+.cert-button:hover {
+  background: #ebb3b3;
 }
