@@ -38,14 +38,13 @@ function injectAbout(aboutData) {
   document
     .querySelectorAll(".firstNameElement")
     .forEach((el) => (el.textContent = aboutData.firstName));
-  document
-    .querySelectorAll(".fullNameElement")
-    .forEach((el) => (el.textContent = aboutData.fullName));
+  document.querySelectorAll(".fullNameElement").forEach((el) => {
+    typeText(el, aboutData.fullName, 50);
+  });
 
-  // // Inject role
-  document
-    .querySelectorAll(".roleElement")
-    .forEach((el) => (el.textContent = aboutData.role));
+  document.querySelectorAll(".roleElement").forEach((el) => {
+    typeText(el, aboutData.role, 50);
+  });
 
   document
     .querySelectorAll(".nicknameElement")
@@ -54,9 +53,94 @@ function injectAbout(aboutData) {
     .querySelectorAll(".titleElement")
     .forEach((el) => (el.textContent = aboutData.title));
 
-  document.getElementById("aboutSummary").innerHTML = aboutData.summary;
-  document.getElementById("footerTextElement").innerHTML = aboutData.footerText;
+  //document.getElementById("aboutSummary").innerHTML = aboutData.summary;
+  typeWriterWithTags("aboutSummary", aboutData.summary, 0.001);
+  //document.getElementById("footerTextElement").innerHTML = aboutData.footerText;
+  typeWriterWithTags("footerTextElement", aboutData.footerText, 20);
   document.getElementById("currentYear").textContent = new Date().getFullYear();
+}
+
+function typeText(element, text, speed = 50) {
+  element.textContent = ""; // Clear the text initially
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      element.textContent += text[i];
+      i++;
+      setTimeout(type, speed);
+    }
+  }
+  type();
+}
+
+function typeWriterWithTags(elementId, text, speed) {
+  const container = document.getElementById(elementId);
+  container.innerHTML = "";
+
+  // Split the text into tokens: HTML tags and plain text.
+  // The regex captures any substring that starts with "<" and ends with ">"
+  const tokens = text
+    .split(/(<\/?[^>]+>)/g)
+    .filter((token) => token.length > 0);
+
+  // We'll use a stack to keep track of where to insert text.
+  // Start with the main container.
+  const elementStack = [container];
+
+  let tokenIndex = 0;
+  let charIndex = 0;
+
+  function typeNext() {
+    // If we've processed all tokens, we are done.
+    if (tokenIndex >= tokens.length) return;
+
+    const token = tokens[tokenIndex];
+    const currentEl = elementStack[elementStack.length - 1];
+
+    // If the token looks like an HTML tag...
+    if (token.startsWith("<") && token.endsWith(">")) {
+      // Check if it's an opening tag (like <u> or <b>)
+      if (token[1] !== "/") {
+        // Create a temporary container to turn the tag string into a DOM element.
+        const tempDiv = document.createElement("div");
+        tempDiv.innerHTML = token;
+        const newEl = tempDiv.firstChild; // This is our new element (for example, a <u> element)
+
+        // Append this new element to the current element.
+        currentEl.appendChild(newEl);
+
+        // If the tag is not self-closing (ends with "/>"), push it onto the stack.
+        if (!token.endsWith("/>")) {
+          elementStack.push(newEl);
+        }
+      } else {
+        // It's a closing tag. Pop the corresponding opening tag from the stack.
+        // (We assume the tags are properly nested.)
+        elementStack.pop();
+      }
+      // Move to the next token and schedule the next call.
+      tokenIndex++;
+      charIndex = 0;
+      setTimeout(typeNext, speed);
+    } else {
+      // The token is plain text.
+      // Type it out character by character.
+      if (charIndex < token.length) {
+        // Create a text node for the next character and append it.
+        const textNode = document.createTextNode(token[charIndex]);
+        currentEl.appendChild(textNode);
+        charIndex++;
+        setTimeout(typeNext, speed);
+      } else {
+        // Finished this text token; move to the next token.
+        tokenIndex++;
+        charIndex = 0;
+        setTimeout(typeNext, speed);
+      }
+    }
+  }
+
+  typeNext(); // Start the typing process.
 }
 
 // Inject Social Links
@@ -210,13 +294,15 @@ function injectContact(contactData) {
   });
 
   document.querySelectorAll(".whatsappElement").forEach((el) => {
-    el.href = `tel:${contactData.whatsapp}`;
+    const phoneNumber = contactData.whatsapp.replace(/\s+/g, "");
+    el.href = `https://wa.me/${phoneNumber}?text=Hello%2C%20%0AI%20hope%20you%27re%20doing%20well.%20%0AI%20found%20your%20number%20and%20thought%20I%E2%80%99d%20reach%20out%20to%20say%20hi.%20%0ALooking%20forward%20to%20connecting`;
     el.textContent = contactData.whatsapp;
   });
 
-  document
-    .querySelectorAll(".mailElement")
-    .forEach((el) => (el.href = contactData.email));
+  document.querySelectorAll(".emailElement").forEach((el) => {
+    el.href = `mailto:${contactData.email}`;
+    el.textContent = contactData.email;
+  });
 }
 
 // Initialize Animations (GSAP + AOS)

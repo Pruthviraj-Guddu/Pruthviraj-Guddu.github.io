@@ -458,6 +458,7 @@ html {
 }
 
 .sec2__aboutme2 {
+  padding-top: 20px;
   position: relative;
   flex: 0.5;
   display: flex;
@@ -1164,6 +1165,7 @@ footer {
   max-width: 800px;
   margin: auto;
   color: #444;
+  min-height: 750px;
 }
 
 #skills-container {
@@ -1286,7 +1288,7 @@ footer {
 }
 
 .project-button:hover {
-  background: #d45555;
+  background: #d53f3f;
 }
 
 /* Certifications Grid */
@@ -1352,5 +1354,5 @@ footer {
 }
 
 .cert-button:hover {
-  background: #ebb3b3;
+  background: #ed5858;
 }

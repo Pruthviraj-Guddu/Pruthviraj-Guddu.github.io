@@ -47,12 +47,15 @@ window.data = {
                 through my self-description. I hope that my impression about
                 myself and your impression about me are not so different.<br />
                 <br />
+
                 If you are interested in knowing more, contact me. Do not expect
-                too much, and keep your sense of humor.`,
+                too much, and keep your sense of humor.
+                <br /><br />
+                Quote : if you could erase all the mistakes of your past, you would also erase the wisdom of your present.`,
     contact: {
       phone: "+1 7039998663",
       whatsapp: "+91 9916687670",
-      email: "mailto:pruthvirajam95@gmail.com",
+      email: "pruthvirajam95@gmail.com",
     },
 
     socialLinks: {
