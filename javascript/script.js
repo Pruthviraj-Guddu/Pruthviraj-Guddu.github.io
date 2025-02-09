@@ -145,7 +145,7 @@ function typeWriterWithTags(elementId, text, speed) {
 
 // Inject Social Links
 function injectSocialLinks(socialLinks) {
-  document.querySelectorAll(".socialLink").forEach((link) => {
+  document.querySelectorAll(".social-btn").forEach((link) => {
     if (link.classList.contains("githubLinkElement"))
       link.href = socialLinks.github.url;
     if (link.classList.contains("linkedinLinkElement"))
@@ -247,13 +247,15 @@ function injectProjects(projectsData) {
               <p><strong>Technologies:</strong> ${
                 project.technologies ? project.technologies.join(", ") : "N/A"
               }</p>
-              <ul>${
-                project.functionality
-                  ? project.functionality
-                      .map((func) => `<li>${func}</li>`)
-                      .join("")
-                  : ""
-              }</ul>
+              <ul class="project-functionality-list">
+                ${
+                  project.functionality
+                    ? project.functionality
+                        .map((func) => `<li>${func}</li>`)
+                        .join("")
+                    : ""
+                }
+              </ul>
               <a href="${project.link}" target="_blank">
                   <button class="project-button">${project.buttonText}</button>
               </a>
@@ -277,7 +279,7 @@ function injectCertifications(certificationsData) {
           <p><strong>Credential ID:</strong> ${cert.credentialId}</p>
           ${
             cert.link
-              ? `<a href="${cert.link}" target="_blank"><button class="cert-button">Show Certificate</button></a>`
+              ? `<a href="${cert.link}" target="_blank"><button class="cert-btn">Show Certificate</button></a>`
               : ""
           }
       </div>

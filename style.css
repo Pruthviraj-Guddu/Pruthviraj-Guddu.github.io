@@ -611,6 +611,7 @@ h1 {
 
 /*#########################################################*/
 
+/*
 button {
   font-family: sans-serif;
   border: none;
@@ -623,6 +624,7 @@ button {
   -webkit-transition-duration: 1s;
   transition-duration: 1s;
 }
+  */
 
 button:hover {
   background-color: #f8f9f9;
@@ -1218,9 +1220,20 @@ footer {
   padding-bottom: 10px;
 }
 
+/* project functionality size */
+ul.project-functionality-list {
+  min-height: 80px; /* Fixed height for the list */
+  overflow-y: auto; /* Scroll if the content exceeds the fixed height */
+  padding: 0; /* Optional: Remove padding */
+  margin: 0; /* Optional: Remove margin */
+  list-style-type: none; /* Optional: Remove default list bullets */
+}
+
+
 .project-card:hover {
   transform: scale(1.05);
 }
+
 
 /* Project Image */
 
@@ -1335,6 +1348,7 @@ footer {
 }
 
 /* Certification Button */
+/*
 .cert-button {
   background: #e66060;
   color: white;
@@ -1348,6 +1362,7 @@ footer {
   display: flex;
   align-items: center;
 }
+  
 
 .cert-button img {
   margin-left: 10px;
@@ -1356,3 +1371,59 @@ footer {
 .cert-button:hover {
   background: #ed5858;
 }
+*/
+
+/* General button styles */
+button, .social-btn, .cert-btn, .repo-btn {
+  font-family: sans-serif;
+  border: none;
+  font-size: 15px;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+/* Social Buttons */
+.social-btn {
+  background-color: #e66060;
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  min-width: 150px;
+  align-content: center;
+  transition: background 0.3s ease-in-out;
+}
+
+.social-btn:hover {
+  background: #d45555;
+}
+
+/* Certificate Buttons */
+.cert-btn {
+  background-color: #e67058; /* Green */
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 18px;
+}
+
+.cert-btn:hover {
+  background-color: #eb9891;
+}
+
+/* Repository Buttons */
+.repo-btn {
+  background-color: #e14a4a; /* Blue */
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 18px;
+}
+
+.repo-btn:hover {
+  background-color: #ed9cba;
+}
+
+
+

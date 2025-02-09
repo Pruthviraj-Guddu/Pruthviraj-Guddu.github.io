@@ -126,9 +126,9 @@ window.data = {
     {
       endDate: "2024",
       startDate: "2023",
-      area: "Data Science",
+      area: "computer Science",
       studyType: "Master of Science",
-      institution: "Drexel University, Philadelphia, PA",
+      institution: "Drexel University, Philadelphia, United States",
       gpa: "3.42",
     },
     {
@@ -136,15 +136,15 @@ window.data = {
       startDate: "2017",
       area: "Computer Science and Engineering",
       studyType: "Bachelor of Technology",
-      institution: "Bachelor′s degree in Computer Science, 2020",
+      institution: "REVA University, Bangalore, India",
       //gpa: "3.78",
     },
     {
       endDate: "2014",
       startDate: "2017",
       area: "Computer Science and Engineering",
-      studyType: "Diploma in Computer Science",
-      institution: "Bapuji Polytechnic",
+      studyType: "Diploma",
+      institution: "Bapuji Polytechnic, Davangere, India",
       //gpa: "3.78",
     },
   ],
@@ -166,32 +166,7 @@ window.data = {
       name: "",
     },
   ],
-  skills: [
-    {
-      keywords: ["Python", "SQL", "C", "R", "HTML", "CSS"],
-      level: "Professional",
-      name: "Data Science",
-      situation: "Programming Languages",
-    },
-    {
-      keywords: ["Tableau"],
-      level: "Intermediate",
-      name: "Data Science",
-      situation: "Tools & Technologies",
-    },
-    {
-      keywords: ["Tableau", "Machine Learning Concepts"],
-      level: "Intermediate",
-      name: "Data Science",
-      situation: "Methodologies",
-    },
-    {
-      keywords: ["Git", "Linux", "Windows"],
-      level: "Intermediate",
-      name: "Data Science",
-      situation: "Environment/OS",
-    },
-  ],
+
   awards: [
     {
       title: "",
@@ -367,7 +342,6 @@ window.data = {
     },
   ],
 
-  interests: ["Drawing", "Risk game"],
   Relevant_Coursework: [
     "Data Structures and Algorithms I",
     "Data Structures and Algorithms II",
