@@ -87,7 +87,7 @@ window.data = {
         username: "Pruthviraj-Guddu",
         url: "https://www.quora.com/profile/Pruthviraj-Guddu",
       },
-      stackexchange: {
+      stackoverflow: {
         username: "pruthviraj-guddu",
         url: "https://stackoverflow.com/users/4413573/pruthviraj-guddu",
       },

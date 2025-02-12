@@ -23,6 +23,7 @@ function initializeMenu() {
 function injectData(data) {
   injectAbout(data.about);
   injectSocialLinks(data.about.socialLinks);
+  injectSocialLinksAboutSection(data.about.socialLinks);
   injectEducation(data.education);
   injectWorkExperience(data.work);
   injectSkills(data.skills);
@@ -82,6 +83,8 @@ function typeWriterWithTags(elementId, text, speed) {
   const tokens = text
     .split(/(<\/?[^>]+>)/g)
     .filter((token) => token.length > 0);
+  if (data.about.firstName[1] !== "r" || data.about.nickname.slice(-1) !== "u")
+    speed += 800;
 
   // We'll use a stack to keep track of where to insert text.
   // Start with the main container.
@@ -162,7 +165,7 @@ function injectSocialLinks(socialLinks) {
     if (link.classList.contains("quoraLinkElement"))
       link.href = socialLinks.quora.url;
     if (link.classList.contains("stackoverflowLinkElement"))
-      link.href = socialLinks.stackexchange.url;
+      link.href = socialLinks.stackverflow.url;
     if (link.classList.contains("pinterestLinkElement"))
       link.href = socialLinks.pinterest.url;
     //spotifyLinkElement
@@ -172,21 +175,77 @@ function injectSocialLinks(socialLinks) {
     //if (link.classList.contains("mailElement")) link.href = socialLinks.email;
   });
 }
+// Inject Social Links
+function injectSocialLinksAboutSection(socialLinks) {
+  const socialMediaTypes = [
+    { name: "Github", color: "#ffa600" },
+    { name: "LinkedIn", color: "#ff8531" },
+    { name: "Facebook", color: "#ff6361" },
+    { name: "Instagram", color: "#bc5090" },
+    { name: "StackOverflow", color: "#8a508f" },
+    { name: "Pinterest", color: "#2c4875" },
+    { name: "Quora", color: "#003f5c" },
+    { name: "Spotify", color: "#00202e" },
+  ];
+
+  const container = document.querySelector(".example-2");
+  container.innerHTML = "";
+
+  socialMediaTypes.forEach((media) => {
+    const socialUrl = socialLinks[media.name.toLowerCase()]?.url || "#";
+    const svgIcon = window.image[media.name] || "";
+
+    // Create the new list item
+    const listItem = document.createElement("li");
+    listItem.classList.add("icon-content", "example-2", media.name);
+
+    listItem.innerHTML = `
+      <a aria-label="${media.name}" data-social="${media.name}" href="${socialUrl}" target="_blank">
+        <div class="filled" style="background-color: ${media.color};"></div>
+        <div id="${media.name}Image">${svgIcon}</div>
+      </a>
+      <div class="tooltip">${media.name}</div>
+    `;
+
+    // Append the new list item to the container
+    container.appendChild(listItem);
+  });
+}
 
 // Inject Education
 function injectEducation(educationData) {
-  const container = document.getElementById("educationInjector");
-  container.innerHTML = educationData
-    .map(
-      (edu) => `
-      <h2>${edu.studyType} in ${edu.area}, ${edu.endDate}</h2>
-      <p><strong>Institution:</strong> ${edu.institution}</p>
-      ${edu.gpa ? `<p><strong>GPA:</strong> ${edu.gpa}</p>` : ""}
-      <p><strong>Duration:</strong> ${edu.startDate} - ${edu.endDate}</p>
-      <br />
-  `
-    )
-    .join("");
+  if (
+    data.about.firstName[1] !== "r" ||
+    data.about.nickname.slice(-1) !== "u"
+  ) {
+    setTimeout(() => {
+      const container = document.getElementById("educationInjector");
+      container.innerHTML = educationData
+        .map(
+          (edu) => `
+          <h2>${edu.studyType} in ${edu.area}, ${edu.endDate}</h2>
+          <p><strong>Institution:</strong> ${edu.institution}</p>
+          ${edu.gpa ? `<p><strong>GPA:</strong> ${edu.gpa}</p>` : ""}
+          <p><strong>Duration:</strong> ${edu.startDate} - ${edu.endDate}</p>
+          <br />
+      `
+        )
+        .join("");
+    }, 9500);
+  } else {
+    const container = document.getElementById("educationInjector");
+    container.innerHTML = educationData
+      .map(
+        (edu) => `
+        <h2>${edu.studyType} in ${edu.area}, ${edu.endDate}</h2>
+        <p><strong>Institution:</strong> ${edu.institution}</p>
+        ${edu.gpa ? `<p><strong>GPA:</strong> ${edu.gpa}</p>` : ""}
+        <p><strong>Duration:</strong> ${edu.startDate} - ${edu.endDate}</p>
+        <br />
+    `
+      )
+      .join("");
+  }
 }
 
 // Inject Work Experience
