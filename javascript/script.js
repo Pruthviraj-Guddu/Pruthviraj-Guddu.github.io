@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initializeMenu();
   injectData(window.data);
   initializeAnimations();
+  loadRandomQuote();
 });
 
 // Menu item click event
@@ -316,7 +317,7 @@ function injectProjects(projectsData) {
                 }
               </ul>
               <a href="${project.link}" target="_blank">
-                  <button class="project-button">${project.buttonText}</button>
+                  <button class="repoBtn">${project.buttonText}</button>
               </a>
           </div>
       </div>
@@ -364,6 +365,29 @@ function injectContact(contactData) {
     el.href = `mailto:${contactData.email}`;
     el.textContent = contactData.email;
   });
+}
+
+//inject quote
+function loadRandomQuote() {
+  var randomIndex = Math.floor(Math.random() * window.data.quotes.length);
+  var randomQuote = window.data.quotes[randomIndex].quote;
+  var randomSource = window.data.quotes[randomIndex].source;
+
+  var quotePage = document.querySelector(".quotePage p");
+
+  // Find the first comma
+  var formattedQuote = randomQuote.replace(/,/, ",<br/>");
+
+  var citeElement = document.querySelector("#quoteSource");
+
+  if (randomSource) {
+    citeElement.style.display = "inline";
+    citeElement.innerHTML = "<i>- " + randomSource + "</i>";
+  } else {
+    citeElement.style.display = "none";
+  }
+
+  typeWriterWithTags("quotePageElement", formattedQuote, 60);
 }
 
 // Initialize Animations (GSAP + AOS)

@@ -50,8 +50,7 @@ window.data = {
 
                 If you are interested in knowing more, contact me. Do not expect
                 too much, and keep your sense of humor.
-                <br /><br />
-                Quote : if you could erase all the mistakes of your past, you would also erase the wisdom of your present.`,
+                `,
     contact: {
       phone: "+1 7039998663",
       whatsapp: "+91 9916687670",
@@ -346,5 +345,69 @@ window.data = {
     "Data Structures and Algorithms I",
     "Data Structures and Algorithms II",
     "Applied Machine Learning for Data Science",
+  ],
+  quotes: [
+    {
+      quote: `Dreaming of the person you want to be is wasting the person you already are.`,
+      source: `Kurt Cobain`,
+    },
+    {
+      quote: `It’s better to burn out than to fade away.`,
+      source: `Kurt Cobain`,
+    },
+    {
+      quote: `Healing doesn't mean that damages never existed.
+              <br/>it means that the damage no longer controls you.`,
+    },
+    {
+      quote: `Simplicity is prerequisite for reliability.`,
+      source: `Edsger Dijkstra`,
+    },
+    {
+      quote: `In order to be irreplaceable, one must always be different`,
+      source: `Coco Chanel`,
+    },
+    {
+      quote: `Code is like humor. When you have to explain it, it’s bad`,
+      source: `Cory House`,
+    },
+    {
+      quote: `The only way to learn a new programming language is by writing programs in it`,
+      source: `Dennis Ritchie`,
+    },
+    {
+      quote: `Testing leads to failure, and failure leads to understanding.`,
+      source: `Burt Rutan`,
+    },
+    {
+      quote: `Don't write better error messages, write code that doesn't need them.`,
+      source: `Jason C. McDonald`,
+    },
+    {
+      quote: `Creativity requires the courage to let go of certainties.`,
+      source: `Erich Fromm`,
+    },
+    {
+      quote: `Lack of concentration makes one tired, while concentration wakes one up`,
+      source: `Erich Fromm, The Art of Being`,
+    },
+    {
+      quote: `Not he who has much is rich, but he who gives much.`,
+      source: `Erich Fromm`,
+    },
+    {
+      quote: `victory is empty without <br/>
+              humility, respect, and charity.`,
+    },
+    {
+      quote: `once you have what you are looking for, enjoy it and don't risk it <br/>
+            for what facade the world sometimes plays in front of your eyes and don't be greedy`,
+    },
+    {
+      quote: `You're never wrong to do the right thing.`,
+    },
+    {
+      quote: `if you could erase all the mistakes of your past, you would also erase the wisdom of your present.`,
+    },
   ],
 };
