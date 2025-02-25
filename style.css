@@ -1107,6 +1107,7 @@ footer {
   justify-content: center;
   gap: 20px;
   padding: 20px;
+  padding-bottom: 50px;
 }
 
 /* Project Card */
@@ -1136,48 +1137,92 @@ ul.project-functionality-list {
 /* Project Image */
 
 /* Image Wrapper */
-.project-img-container {
+/* Project Card styling */
+.projectCard {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Title overflow fix */
+.projectCard__title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-overflow: ellipsis; /* Add this */
+  white-space: nowrap; /* Add this */
+  overflow: hidden; /* Add this */
+  max-width: 100%; /* Prevent overflow */
+  display: block;
+}
+
+/* Hover effect */
+.projectCard:hover {
+  transform: translateY(-10px);
+}
+
+/* Project Info styling */
+.projectCard__descr-wrapper {
+  padding: 20px;
+}
+
+/* Link styling */
+.projectCard__links {
+  position: absolute; /* Positioning the links inside the card */
+  bottom: 30px; /* Move the links up by reducing the bottom value */
+  left: 10px; /* Adjust this value for left positioning */
+  right: 10px; /* Adjust this value for right positioning */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  padding-bottom: 20px;
+  justify-content: space-between; /* Distribute the links, one on the left and one on the right */
+}
+
+.projectCard__left-link {
+  position: absolute;
+  left: 0; /* Fix "Preview" link to the left */
+}
+
+.projectCard__right-link {
+  position: absolute;
+  right: 0; /* Fix "Code" link to the right */
+}
+
+.projectCard__links svg {
+  width: 20px;
+  height: 20px;
+  fill: #f47575;
+  margin-right: 10px;
+}
+
+.projectCard__links .link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.projectCard__links .link:hover {
+  text-decoration: underline;
+}
+
+.projectCard__img {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Make it take the full width of the parent container */
+  height: 200px; /* Adjust the height as needed */
+}
+
+.projectCard__image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Scale the image while maintaining its aspect ratio */
 }
 
 /* Project Image */
-.project-img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
-
-/* Project Info */
-.project-info {
-  padding: 15px;
-  text-align: center;
-}
-
-/* Bigger Project Titles */
-.project-info h3 {
-  font-size: 2rem; /* Increased size for better readability */
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-/* Bigger Descriptions */
-.project-info p {
-  font-size: 1.4rem; /* Increased text size */
-  color: #444;
-  line-height: 1.6;
-}
-
-/* Functionality List */
-.project-info ul {
-  text-align: left;
-  padding-left: 20px;
-  font-size: 1.2rem; /* Slightly larger */
-  color: #666;
-}
 
 /* Smaller Icons */
 .featurette-icon i {
@@ -1408,41 +1453,6 @@ ul {
 .example-2 .icon-content a[data-social="Spotify"] .filled,
 .example-2 .icon-content a[data-social="Spotify"] ~ .tooltip {
   background-color: #ffa600;
-}
-
-/* Repository Buttons */
-
-.repoBtn {
-  display: inline-block;
-  padding: 0.9rem 1.8rem;
-  font-size: 14px;
-  font-weight: 700;
-  color: rgb(0, 0, 0);
-  border: 3px solid rgb(246, 133, 152);
-  cursor: pointer;
-  position: relative;
-  background-color: transparent;
-  text-decoration: none;
-  overflow: hidden;
-  z-index: 1;
-  font-family: inherit;
-}
-
-.repoBtn::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(236, 137, 154, 0.608);
-  transform: translateX(-100%);
-  transition: all 0.3s;
-  z-index: -1;
-}
-
-.repoBtn:hover::before {
-  transform: translateX(0);
 }
 
 /*Quote*/

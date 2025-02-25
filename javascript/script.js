@@ -149,33 +149,19 @@ function typeWriterWithTags(elementId, text, speed) {
 
 // Inject Social Links
 function injectSocialLinks(socialLinks) {
-  document.querySelectorAll(".social-btn").forEach((link) => {
+  /*   document.querySelectorAll(".social-btn").forEach((link) => {
     if (link.classList.contains("githubLinkElement"))
-      link.href = socialLinks.github.url;
-    if (link.classList.contains("linkedinLinkElement"))
-      link.href = socialLinks.linkedin.url;
-    if (link.classList.contains("digitalResumeElement"))
-      link.href = socialLinks.digitalResume.url;
-    //facebookLinkElement
-    if (link.classList.contains("facebookLinkElement"))
-      link.href = socialLinks.facebook.url;
-    //instagramLinkElement
-    if (link.classList.contains("instagramLinkElement"))
-      link.href = socialLinks.instagram.url;
-    //quoraLinkElement
-    if (link.classList.contains("quoraLinkElement"))
-      link.href = socialLinks.quora.url;
-    if (link.classList.contains("stackoverflowLinkElement"))
-      link.href = socialLinks.stackverflow.url;
-    if (link.classList.contains("pinterestLinkElement"))
-      link.href = socialLinks.pinterest.url;
-    //spotifyLinkElement
-    if (link.classList.contains("spotifyLinkElement"))
-      link.href = socialLinks.spotify.url;
+      link.href = socialLinks.github.url;}); */
+  const socialBtns = document.querySelectorAll(".social-btn");
 
-    //if (link.classList.contains("mailElement")) link.href = socialLinks.email;
+  socialBtns.forEach((link) => {
+    const platform = link.classList[0].replace("LinkElement", "").toLowerCase();
+    if (socialLinks[platform]) {
+      link.href = socialLinks[platform].url;
+    }
   });
 }
+
 // Inject Social Links
 function injectSocialLinksAboutSection(socialLinks) {
   const socialMediaTypes = [
@@ -293,35 +279,49 @@ function injectProjects(projectsData) {
   const container = document.getElementById("projects-container");
   container.innerHTML = projectsData
     .map(
-      (project) => `
-      <div class="project-card">
-          <div class="project-img-container">
-              <img src="${project.img}" alt="${
-        project.name
-      }" class="project-img">
-          </div>
-          <div class="project-info">
-              <h3>${project.name}</h3>
-              <p><strong>Date:</strong> ${project.date}</p>
-              <p>${project.description}</p>
-              <p><strong>Technologies:</strong> ${
-                project.technologies ? project.technologies.join(", ") : "N/A"
-              }</p>
-              <ul class="project-functionality-list">
-                ${
-                  project.functionality
-                    ? project.functionality
-                        .map((func) => `<li>${func}</li>`)
-                        .join("")
-                    : ""
-                }
-              </ul>
-              <a href="${project.link}" target="_blank">
-                  <button class="repoBtn">${project.buttonText}</button>
-              </a>
-          </div>
+      (project) =>
+        `<div class="projectCard">
+      <div class="projectCard__img">
+        <img
+          src="${project.img}"
+          alt="${project.name}"
+          class="projectCard__image"
+        />
       </div>
-  `
+      <div class="projectCard__descr-wrapper">
+        <p class="projectCard__title">${project.name}</p>
+        <p><strong>Date:</strong> ${project.date}</p>
+        <p>${project.description}</p>
+        <p>
+          <strong>Technologies:</strong> ${
+            project.technologies ? project.technologies.join(", ") : "N/A"
+          }
+        </p>
+        <ul class="project-functionality-list">
+          ${
+            project.functionality
+              ? project.functionality.map((func) => `<li>${func}</li>`).join("")
+              : ""
+          }
+        </ul>
+        <div class="projectCard__links">
+          ${
+            project.previewLink
+              ? `<div class="projectCard__left-link">
+              <a class="link" href="${project.previewLink}">${window.image.Link} Preview</a>
+            </div>`
+              : ""
+          }
+          ${
+            project.sourceLink
+              ? `<div class="projectCard__right-link">
+              <a class="link" href="${project.sourceLink}">${window.image.Github} Code</a>
+            </div>`
+              : ""
+          }
+        </div>
+      </div>
+    </div>`
     )
     .join("");
 }
@@ -411,7 +411,6 @@ function initializeAnimations() {
 
   AOS.init({ duration: 1000, offset: 0 });
 }
-
 // Menu icon toggle
 document
   .querySelector(".sec1__menuIcon")
@@ -419,7 +418,6 @@ document
     this.classList.toggle("active");
     document.querySelector(".menuBar").classList.toggle("active");
   });
-
 // Scroll to top functionality
 window.addEventListener("scroll", function () {
   document

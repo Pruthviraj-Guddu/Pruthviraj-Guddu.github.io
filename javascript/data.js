@@ -248,7 +248,8 @@ window.data = {
         "Administrative dashboard",
       ],
       img: "Images/project imgs/car.png",
-      link: "https://github.com/Pruthviraj-Guddu/CS530-ProjectCars",
+      sourceLink: "https://github.com/Pruthviraj-Guddu/CS530-ProjectCars",
+      previewLink: "",
       buttonText: "Repository 🔒",
     },
     {
@@ -261,7 +262,8 @@ window.data = {
         "Promotes sustainability",
       ],
       img: "Images/project imgs/furniture.png",
-      link: "https://github.com/Pruthviraj-Guddu/FurniFlexSustainability",
+      sourceLink: "https://github.com/Pruthviraj-Guddu/FurniFlexSustainability",
+      previewLink: "",
       buttonText: "Repository 🔐",
     },
     {
@@ -271,7 +273,8 @@ window.data = {
       technologies: [".NET", "C#", "Visual Studio"],
       functionality: ["Multi-client connections", "Asynchronous communication"],
       img: "Images/project imgs/chat.png",
-      link: "https://github.com/Pruthviraj-Guddu/winChatApp",
+      sourceLink: "https://github.com/Pruthviraj-Guddu/winChatApp",
+      previewLink: "",
       buttonText: "Repository 🔒",
     },
     {
@@ -279,7 +282,8 @@ window.data = {
       date: "June 2024",
       description: "Created a webpage answering common student questions...",
       img: "Images/project imgs/Drexel_University_seal.svg.png",
-      link: "https://pruthviraj-guddu.github.io/drexelfaq",
+      sourceLink: "https://github.com/Pruthviraj-Guddu/drexelfaq",
+      previewLink: "https://pruthviraj-guddu.github.io/drexelfaq",
       buttonText: "View Page",
     },
   ],
@@ -409,5 +413,102 @@ window.data = {
     {
       quote: `if you could erase all the mistakes of your past, you would also erase the wisdom of your present.`,
     },
+    {
+      quote: `The greatest glory in living lies not in never falling, but in rising every time we fall.`,
+      source: `Ralph Waldo Emerson`,
+    },
+    {
+      quote: `What you're not changing, you're choosing it. .`,
+    },
+    {
+      quote: `Every struggle in your life has shaped you into the person you are today. Be thankful for the hard times, they can only make you stronger..`,
+      source: `Keanu Reeves`,
+    },
+    {
+      quote: `Be thankful for all the struggles you go through. They make you stronger, wiser and humble. Don't let it break you let it make you.`,
+    },
+    {
+      quote: `A mistake that makes you humble is much better than an achievement that makes you arrogant.`,
+    },
+    {
+      quote: `You don't drown by falling in the water, you drown by staying there.`,
+      source: `Ed Cole`,
+    },
+    {
+      quote: `Everything's always ending. But everything's always beginning, too.`,
+      source: `Patrick Ness`,
+    },
+    {
+      quote: `The best way to predict your future is to create it.`,
+      source: `Abraham Lincoln`,
+    },
+    {
+      quote: `Tough times never last. Tough people do.`,
+      source: `Robert Schuller`,
+    },
+    {
+      quote: `Sometimes it takes a good fall to know where you really stand..`,
+      source: `Hayley Williams`,
+    },
+    {
+      quote: `Problems are only opportunities with thorns on them..`,
+      source: `Hugh Miller`,
+    },
+    {
+      quote: `You always pass failure on the way to success.`,
+      source: `Mickey Rooney`,
+    },
+    {
+      quote: `Even the darkest night will end and the sun will rise.`,
+      source: `Victor Hugo`,
+    },
+    {
+      quote: `You can't shine like a diamond, if you not willing to get cut like a diamond!.`,
+      source: `Eric Thomas`,
+    },
+    {
+      quote: `Life is rough so you gotta be tough.`,
+      source: `Johnny Cash.`,
+    },
+    {
+      quote: `Being a fish out of water is tough, but that's how you evolve..`,
+      source: `Kumail Nanjiani`,
+    },
+    {
+      quote: `You must always be able to predict what's next and then have the flexibility to evolve..`,
+      source: `Marc Benioff`,
+    },
+    {
+      quote: `Ships dont sink because of the water around them. <br/> Ships sink because of the water that gets in them..`,
+    },
+    {
+      quote: `Loss: When the people you love are gone, you're alone..`,
+      source: `Keanu Reeves`,
+    },
+    {
+      quote: `Struggles: Every struggle in your life has shaped you into the person you are today.`,
+      source: `Keanu Reeves`,
+    },
+    {
+      quote: `The simple act of paying attention can take you a long way.`,
+      source: `Keanu Reeves`,
+    },
+    {
+      quote: `You can't stop the waves but you can learn to surf.`,
+      source: `Keanu Reeves`,
+    },
+    {
+      quote: `Grief Changes shape but it never dies.`,
+      source: `Keanu Reeves`,
+    },
+    {
+      quote: `Being "raised right" doesn't mean you don't drink, party and smoke. Being raised right is how you treat people, your manners and respect..`,
+      source: `Keanu Reeves`,
+    },
+    {
+      quote: `If you're too tired to speak, sit next to me, because I too, am fluent in silence.`,
+      source: `Keanu Reeves`,
+    },
+    
   ],
 };
