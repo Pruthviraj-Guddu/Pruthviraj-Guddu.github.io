@@ -176,6 +176,8 @@ html {
   margin-top: 10rem;
   width: 100%;
   padding: 0 5rem;
+  position: relative; /* Ensure it respects z-index */
+  z-index: 2; /* Higher than the canvas */
 }
 
 .sec1__content .sec1__contentDetail h1 {
@@ -1490,4 +1492,14 @@ ul {
   font-style: italic;
   color: #bdbec0;
   z-index: -1;
+}
+
+.particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Ensure it's above other content */
+  pointer-events: none; /* Allow clicks to pass through to elements below */
 }

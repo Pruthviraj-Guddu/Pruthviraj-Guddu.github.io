@@ -3,7 +3,124 @@ document.addEventListener("DOMContentLoaded", function () {
   injectData(window.data);
   initializeAnimations();
   loadRandomQuote();
+  makeparticle();
 });
+function makeparticle() {
+  const canvas = document.querySelector(".particles-js");
+  const ctx = canvas.getContext("2d");
+
+  // Set canvas dimensions
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  // Particle class
+  class Particle {
+    constructor(x, y, radius, color, velocity) {
+      this.x = x;
+      this.y = y;
+      this.radius = radius;
+      this.color = color;
+      this.velocity = velocity;
+      this.opacity = 0.5; // Initial opacity
+    }
+
+    draw() {
+      ctx.save();
+      ctx.globalAlpha = this.opacity;
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+      ctx.fillStyle = this.color;
+      ctx.fill();
+      ctx.closePath();
+      ctx.restore();
+    }
+
+    update(particles) {
+      this.draw();
+
+      // Update position
+      this.x += this.velocity.x;
+      this.y += this.velocity.y;
+
+      // Bounce off edges
+      if (this.x + this.radius > canvas.width || this.x - this.radius < 0) {
+        this.velocity.x = -this.velocity.x;
+      }
+      if (this.y + this.radius > canvas.height || this.y - this.radius < 0) {
+        this.velocity.y = -this.velocity.y;
+      }
+
+      // Draw lines between particles
+      particles.forEach((particle) => {
+        const distance = Math.hypot(this.x - particle.x, this.y - particle.y);
+        if (distance < 150) {
+          ctx.beginPath();
+          ctx.moveTo(this.x, this.y);
+          ctx.lineTo(particle.x, particle.y);
+          ctx.strokeStyle = `rgba(0, 0, 0, ${1 - distance / 150})`;
+          ctx.lineWidth = 1;
+          ctx.stroke();
+          ctx.closePath();
+        }
+      });
+    }
+  }
+
+  // Create particles
+  const particles = [];
+  const numberOfParticles = 60; // Adjust as needed
+  const color = "#000000"; // Particle color
+
+  function init() {
+    particles.length = 0; // Clear existing particles
+    for (let i = 0; i < numberOfParticles; i++) {
+      const radius = Math.random() * 3 + 1; // Random size (small particles)
+      const x = Math.random() * (canvas.width - radius * 2) + radius;
+      const y = Math.random() * (canvas.height - radius * 2) + radius;
+      const velocity = {
+        x: (Math.random() - 0.5) * 2, // Random horizontal speed
+        y: (Math.random() - 0.5) * 2, // Random vertical speed
+      };
+      particles.push(new Particle(x, y, radius, color, velocity));
+    }
+  }
+
+  // Animation loop
+  function animate() {
+    requestAnimationFrame(animate);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    particles.forEach((particle) => {
+      particle.update(particles);
+    });
+  }
+
+  // Initialize and start animation
+  init();
+  animate();
+
+  // Handle window resize
+  window.addEventListener("resize", () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    init();
+  });
+
+  // Handle click interaction (push particles)
+  canvas.addEventListener("click", (event) => {
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+
+    for (let i = 0; i < 4; i++) {
+      const radius = Math.random() * 3 + 1;
+      const velocity = {
+        x: (Math.random() - 0.5) * 2,
+        y: (Math.random() - 0.5) * 2,
+      };
+      particles.push(new Particle(mouseX, mouseY, radius, color, velocity));
+    }
+  });
+}
 
 // Menu item click event
 function initializeMenu() {
