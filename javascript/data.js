@@ -280,10 +280,20 @@ window.data = {
     {
       name: "Drexel University Resources",
       date: "June 2024",
-      description: "Created a webpage answering common student questions...",
+      description: "Created a webpage answering common student questions.",
+      technologies: [".HTML", "CSS", "javaScript"],
       img: "Images/project imgs/Drexel_University_seal.svg.png",
       sourceLink: "https://github.com/Pruthviraj-Guddu/drexelfaq",
       previewLink: "https://pruthviraj-guddu.github.io/drexelfaq",
+      buttonText: "View Page",
+    },
+    {
+      name: "interactive webpage for fun",
+      date: "June 2024",
+      description: "A playful and heartfelt interactive webpage to remind someone special just how incredible they are—click 'Yes' or 'No' and see the magic unfold!",
+      technologies: [".HTML", "CSS", "javaScript"],
+      img: "https://pruthviraj-guddu.github.io/romanticWeb/carry.gif",
+      previewLink: "https://pruthviraj-guddu.github.io/romanticWeb/",
       buttonText: "View Page",
     },
   ],
@@ -483,10 +493,6 @@ window.data = {
     },
     {
       quote: `Loss: When the people you love are gone, you're alone..`,
-      source: `Keanu Reeves`,
-    },
-    {
-      quote: `Struggles: Every struggle in your life has shaped you into the person you are today.`,
       source: `Keanu Reeves`,
     },
     {
