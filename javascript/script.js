@@ -272,10 +272,19 @@ function injectSocialLinks(socialLinks) {
   const socialBtns = document.querySelectorAll(".social-btn");
 
   socialBtns.forEach((link) => {
-    const platform = link.classList[0].replace("LinkElement", "").toLowerCase();
-    if (socialLinks[platform]) {
-      link.href = socialLinks[platform].url;
-    }
+    // Loop through all the classes of the link
+    link.classList.forEach((className) => {
+      // Check if the class contains 'LinkElement' in its name
+      if (className.endsWith("LinkElement")) {
+        // Get the platform name by removing 'LinkElement' and converting to lowercase
+        const platform = className.replace("LinkElement", "").toLowerCase();
+
+        // If the platform exists in the socialLinks object, set the href
+        if (socialLinks[platform]) {
+          link.href = socialLinks[platform].url;
+        }
+      }
+    });
   });
 }
 

@@ -67,7 +67,7 @@ window.data = {
         url: "https://www.linkedin.com/in/pruthvirajma",
       },
       //email: "mailto:pruthvirajam95@gmail.com",
-      digitalResume: {
+      digitalresume: {
         url: "./Pruthviraj_resume_laTex.pdf",
       },
       instagram: {
