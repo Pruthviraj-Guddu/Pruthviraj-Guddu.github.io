@@ -99,28 +99,6 @@ window.data = {
     },
   },
 
-  ProjectExperience: [
-    {
-      name: "Movie Recommendation System",
-      explanation:
-        "Led a comprehensive data cleaning process on datasets from MovieLens, IMDB, Rotten Tomatoes, and Wikipedia, processing over 20 million records to handle missing values, eliminate duplicates, and standardize formats. Conducted exploratory data analysis on over 100 movie attributes and user preferences to identify key patterns for algorithm development. Built and optimized collaborative filtering models including Singular Value Decomposition (SVD), SVD++, and Non-Negative Matrix Factorization (NMF) for predicting user ratings. Evaluated model performance using metrics like Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE). Developed a Content-Based recommendation system using Cosine Similarity, Jaccard Similarity, and k-nearest neighbors (KNN) for personalized recommendations.",
-      tag: ["Python", "Pandas", "SciPy", "Machine Learning"],
-      bestLang: "Python",
-      date: "Sep 2023 – Mar 2024",
-      link: "https://github.com/AnamikaRekha1999/movie-recommendation-system",
-      viewLink: "",
-    },
-    {
-      name: "Suicide Data Acquisition and Analysis",
-      explanation:
-        "Conducted web scraping in Python to acquire a comprehensive suicide dataset from various websites, adding valuable data points. Preprocessed and manipulated the data, merging it with other datasets to ensure accuracy and consistency. Provided actionable insights for suicide prevention agencies to enhance outreach efforts.",
-      tag: ["Python", "Web Scraping", "Data Analysis"],
-      bestLang: "Python",
-      date: "Sep 2022 – Dec 2022",
-      link: "https://github.com/AnamikaRekha1999/suicide-data-analysis",
-      viewLink: "",
-    },
-  ],
   education: [
     {
       endDate: "2024",
@@ -180,10 +158,11 @@ window.data = {
       position:
         "Intern Software Engineer (AngularJS, JavaScript, NodeJS, PHP&amp; SQL",
       startDate: "Oct 2024",
-      endDate: "Prsent",
+      endDate: "Mar 2025",
       highlights: [
-        "side project : Daily Question-Answer Application Developed a web app using Flask and SQLite that allows users to log in, answer daily questions, view answer history with graphical trends (Chart.js), manage reminders, and interact with the SQL database directly. Tech Stack: Flask, SQLite, Chart.js, HTML/CSS",
-        "Contributed in creating assessment tools using JavaScript, similar to Google Forms, incorporating complex formulas to dynamically link roadmaps and opportunities for financial advisors, improving client engagement and decision-making processes.",
+        "Contributing in creating assessment tools using JavaScript, similar to Google Forms, incorporating complex formulas to dynamically link roadmaps and opportunities for financial advisors, improving client engagement and decision-making processes.",
+        "Side Project: Developed a Daily Question-Answer web application using Flask and SQLite, enabling user login, daily question responses, answer history with graphical trends (Chart.js), and reminder management.",
+        "Developed advanced AI agents using Copilot Studio, integrating SharePoint and Excel for streamlined data retrieval and reporting, designed an agent to extract and summarize activity data for leadership insights, and explored API integrations with a focus on data security and system reliability.",
       ],
     },
     {
@@ -290,7 +269,8 @@ window.data = {
     {
       name: "interactive webpage for fun",
       date: "June 2024",
-      description: "A playful and heartfelt interactive webpage to remind someone special just how incredible they are—click 'Yes' or 'No' and see the magic unfold!",
+      description:
+        "A playful and heartfelt interactive webpage to remind someone special just how incredible they are—click 'Yes' or 'No' and see the magic unfold!",
       technologies: [".HTML", "CSS", "javaScript"],
       img: "https://pruthviraj-guddu.github.io/romanticWeb/carry.gif",
       previewLink: "https://pruthviraj-guddu.github.io/romanticWeb/",
@@ -515,6 +495,5 @@ window.data = {
       quote: `If you're too tired to speak, sit next to me, because I too, am fluent in silence.`,
       source: `Keanu Reeves`,
     },
-    
   ],
 };
