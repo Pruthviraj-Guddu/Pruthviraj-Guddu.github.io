@@ -276,6 +276,16 @@ window.data = {
       previewLink: "https://pruthviraj-guddu.github.io/romanticWeb/",
       buttonText: "View Page",
     },
+    {
+      name: "Minimalist Watch Face",
+      date: "Sep 12, 2024",
+      description:
+        "Elevate your Wear OS experience with the Minimalist Watch Face.",
+      technologies: ["android studio"],
+      img: "Images/project imgs/MinimalistWatchFace.webp",
+      previewLink: "https://play.google.com/store/apps/details?id=com.pruthviraj.minimalistface",
+      buttonText: "open playstore",
+    },
   ],
   certifications: [
     {
