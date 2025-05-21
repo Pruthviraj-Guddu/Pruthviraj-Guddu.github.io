@@ -152,6 +152,18 @@ window.data = {
   ],
   work: [
     {
+      name: "BLive",
+      location:
+        "BLive - E Mobility Platform - Plot no.375, 3rd floor, 5 main, 14th Cross Rd, Sector 6, HSR Layout, Bengaluru, Karnataka 560102",
+      position:
+        "Intern Software Engineer UI/UX",
+      startDate: "14 May 2025",
+      endDate: "Present",
+      highlights: [
+        "Developing front end with Flutter and Dart",
+      ],
+    },
+    {
       name: "Actifi, Inc.",
       location:
         "Remote (600 US-169, St Louis Park, Minnesota, United States 55426)",
