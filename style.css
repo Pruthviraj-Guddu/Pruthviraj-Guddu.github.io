@@ -90,6 +90,10 @@ html {
   background: #fff;
 }
 
+ .fullNameElement {
+    font-family: 'Agustina', sans-serif;
+  }
+
 .navBar {
   display: flex;
   position: fixed; /* Make it fixed at the top */
