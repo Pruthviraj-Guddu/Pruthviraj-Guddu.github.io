@@ -155,13 +155,10 @@ window.data = {
       name: "BLive",
       location:
         "BLive - E Mobility Platform - Plot no.375, 3rd floor, 5 main, 14th Cross Rd, Sector 6, HSR Layout, Bengaluru, Karnataka 560102",
-      position:
-        "Intern Software Engineer UI/UX",
+      position: "Intern Software Engineer UI/UX",
       startDate: "14 May 2025",
       endDate: "Present",
-      highlights: [
-        "Developing front end with Flutter and Dart",
-      ],
+      highlights: ["Developing front end with Flutter and Dart"],
     },
     {
       name: "Actifi, Inc.",
@@ -295,7 +292,8 @@ window.data = {
         "Elevate your Wear OS experience with the Minimalist Watch Face.",
       technologies: ["android studio"],
       img: "Images/project imgs/MinimalistWatchFace.webp",
-      previewLink: "https://play.google.com/store/apps/details?id=com.pruthviraj.minimalistface",
+      previewLink:
+        "https://play.google.com/store/apps/details?id=com.pruthviraj.minimalistface",
       buttonText: "open playstore",
     },
   ],
@@ -354,6 +352,35 @@ window.data = {
       issued: "Mar 2021",
       credentialId: "4C5AA87F62B5FA28",
       link: "https://learn.microsoft.com/api/achievements/share/en-us/PruthvirajGuddu-9780/3XXLD3LH",
+    },
+
+    {
+      name: "Maintain a secure repository by using GitHub best practices",
+      issuer: "Microsoft",
+      issued: "5/22/2025",
+      credentialId: "2DS5STLV",
+      link: "https://learn.microsoft.com/api/achievements/share/en-us/PruthvirajGuddu-9780/2DS5STLV",
+    },
+    {
+      name: "GitHub fundamentals - Administration basics and product features Part 1 of 2",
+      issuer: "Microsoft",
+      issued: "5/22/2025",
+      credentialId: "W2QEQM4N",
+      link: "https://learn.microsoft.com/api/achievements/share/en-us/PruthvirajGuddu-9780/W2QEQM4N",
+    },
+    {
+      name: "Azure SQL fundamentals",
+      issuer: "Microsoft",
+      issued: "2/6/2024",
+      credentialId: "fzc592fx",
+      link: "https://learn.microsoft.com/en-us/users/pruthvirajguddu-9780/achievements/fzc592fx",
+    },
+    {
+      name: "Write advanced Transact-SQL queries",
+      issuer: "Microsoft",
+      issued: "2/1/2024",
+      credentialId: "8R5C8FRW",
+      link: "https://learn.microsoft.com/api/achievements/share/en-us/PruthvirajGuddu-9780/8R5C8FRW",
     },
   ],
 
