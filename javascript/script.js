@@ -176,7 +176,11 @@ function injectAbout(aboutData) {
   typeWriterWithTags("aboutSummary", aboutData.summary, 0.001);
   //document.getElementById("footerTextElement").innerHTML = aboutData.footerText;
   typeWriterWithTags("footerTextElement", aboutData.footerText, 20);
-  document.getElementById("currentYear").textContent = new Date().getFullYear();
+  const yearElement = document.getElementById("currentYear");
+  yearElement.textContent = new Date().getFullYear();
+  yearElement.style.fontFamily = "'Agustina', sans-serif";
+  yearElement.style.fontSize = "20px";
+  yearElement.style.fontWeight = "normal";
 }
 
 function typeText(element, text, speed = 50) {
