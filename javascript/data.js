@@ -296,6 +296,18 @@ window.data = {
         "https://play.google.com/store/apps/details?id=com.pruthviraj.minimalistface",
       buttonText: "open playstore",
     },
+    {
+      name: "MultiTool flutter app",
+      date: "Jul 2, 2025",
+      description:
+        "Your all-in-one utility app for productivity and daily tools.",
+      technologies: ["Flutter and Dart"],
+      img: "https://github.com/Pruthviraj-Guddu/multitool/blob/main/assets/images/appIcon.png?raw=true",
+      sourceLink: "https://github.com/Pruthviraj-Guddu/multitool",
+      previewLink:
+        "https://play.google.com/store/apps/details?id=com.pruthviraj.multitool",
+      buttonText: "open playstore",
+    },
   ],
   certifications: [
     {
